@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+div {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+span {
+  margin-left: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 1rem 1rem;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  div {
+    font-size: 17px;
+  }
+
+  span {
+    margin-left: 8px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+
+:host-context(.light) nav {
+  background-color: var(--light-el);
+}
+:host-context(.dark) nav {
+  background-color: var(--dark-el);
+}
